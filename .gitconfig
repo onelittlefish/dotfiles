@@ -1,0 +1,24 @@
+[core]
+	excludesfile = ~/.gitignore_global
+[color]
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold # line info
+	old = red # deletions
+	new = green # additions
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	subup = submodule update --init --recursive
+	tree = log --graph --decorate
+	treeoneline = log --graph --decorate --oneline
+	treeshort = log --graph --decorate --pretty=format:'%Cgreen%h %Cred%an%Creset %s %Cblue%d'
+[push]
+	default = simple
