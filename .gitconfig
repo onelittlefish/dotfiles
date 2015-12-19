@@ -17,8 +17,10 @@
 	untracked = cyan
 [alias]
 	subup = submodule update --init --recursive
-	tree = log --graph --decorate
-	treeoneline = log --graph --decorate --oneline
-	treeshort = log --graph --decorate --pretty=format:'%Cgreen%h %Cred%an%Creset %s %Cblue%d'
+	st = status
+	rhead = reset --hard HEAD
+	gr = log --graph --decorate
+	gro = log --graph --decorate --oneline
+	grs = log --graph --decorate --pretty=format:'%Cgreen%h %Cred%an%Creset %s %Cblue%d'
 [push]
 	default = simple
