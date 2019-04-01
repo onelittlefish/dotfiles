@@ -18,6 +18,7 @@
 [alias]
 	subup = submodule update --init --recursive
 	st = status
+	co = checkout
 	rhead = reset --hard HEAD
 	gr = log --graph --decorate
 	gro = log --graph --decorate --oneline
