@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Horizon",
+    "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+    "workbench.editor.enablePreview": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${dirty}",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "window.zoomLevel": 0
+}

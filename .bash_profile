@@ -8,3 +8,5 @@ alias "cartboot"="carthage bootstrap --platform Mac --configuration Debug --cach
 alias "cartboot-ios"="carthage bootstrap --platform iOS --configuration Debug --cache-builds"
 alias "cartup"="carthage update --platform Mac --configuration Debug --cache-builds"
 alias "cartup-ios"="carthage update --platform iOS --configuration Debug --cache-builds"
+
+alias taskdone='osascript -e "display notification \"Exit Code: $?\" with title \"Task Completed (swipe to dismiss)\" sound name \"Breeze\""'
