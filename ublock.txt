@@ -1,0 +1,15 @@
+! What's Happening
+twitter.com##div[aria-label="Timeline: Trending now"]
+! Discover new Lists
+twitter.com##div[aria-label="Timeline: Your Lists"] > div > div:nth-of-type(5)
+twitter.com##div[aria-label="Timeline: Your Lists"] > div > div:nth-of-type(6)
+twitter.com##div[aria-label="Timeline: Your Lists"] > div > div:nth-of-type(7)
+twitter.com##div[aria-label="Timeline: Your Lists"] > div > div:nth-of-type(8)
+twitter.com##div[aria-label="Timeline: Your Lists"] > div > div:nth-of-type(9)
+! Who to follow
+twitter.com##div:has(> aside[aria-label="Who to follow"])
+
+cooking.nytimes.com##.nytc---modal-window---contentBase
+cooking.nytimes.com##.nytc---shared---blackBG.nytc---modal-window---isShown.nytc---modal-window---windowContainer
+
+||www.nytimes.com/vi-assets/static-assets/main-*.js$script
