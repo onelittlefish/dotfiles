@@ -8,6 +8,8 @@ twitter.com##div[aria-label="Timeline: Your Lists"] > div > div:nth-of-type(8)
 twitter.com##div[aria-label="Timeline: Your Lists"] > div > div:nth-of-type(9)
 ! Who to follow
 twitter.com##div:has(> aside[aria-label="Who to follow"])
+! Topics to follow
+twitter.com##div[aria-label="Timeline: "]
 
 cooking.nytimes.com##.nytc---modal-window---contentBase
 cooking.nytimes.com##.nytc---shared---blackBG.nytc---modal-window---isShown.nytc---modal-window---windowContainer

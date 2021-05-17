@@ -5,23 +5,23 @@
 	<key>DVTConsoleDebuggerInputTextColor</key>
 	<string>0.815696 0.482945 0.278154 1</string>
 	<key>DVTConsoleDebuggerInputTextFont</key>
-	<string>SFMono-Bold - 13.0</string>
+	<string>FiraCode-Regular - 13.0</string>
 	<key>DVTConsoleDebuggerOutputTextColor</key>
 	<string>0.866241 0.805785 0.62265 1</string>
 	<key>DVTConsoleDebuggerOutputTextFont</key>
-	<string>SFMono-Regular - 13.0</string>
+	<string>FiraCode-Regular - 13.0</string>
 	<key>DVTConsoleDebuggerPromptTextColor</key>
 	<string>0.317071 0.437736 1 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
-	<string>SFMono-Bold - 13.0</string>
+	<string>FiraCode-Regular - 13.0</string>
 	<key>DVTConsoleExectuableInputTextColor</key>
 	<string>0.851069 0.444002 0.279582 1</string>
 	<key>DVTConsoleExectuableInputTextFont</key>
-	<string>SFMono-Regular - 13.0</string>
+	<string>FiraCode-Regular - 13.0</string>
 	<key>DVTConsoleExectuableOutputTextColor</key>
 	<string>0.795652 0.773823 0.608422 1</string>
 	<key>DVTConsoleExectuableOutputTextFont</key>
-	<string>SFMono-Bold - 13.0</string>
+	<string>FiraCode-Regular - 13.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.121569 0.141176 0.2 1</string>
 	<key>DVTConsoleTextInsertionPointColor</key>
@@ -59,15 +59,15 @@
 	<key>DVTMarkupTextOtherHeadingColor</key>
 	<string>0.755129 0.682783 0.512118 0.5</string>
 	<key>DVTMarkupTextOtherHeadingFont</key>
-	<string>.SFNS-Regular - 18.6</string>
+	<string>.SFNS-Regular - 18.2</string>
 	<key>DVTMarkupTextPrimaryHeadingColor</key>
 	<string>0.755129 0.682783 0.512118 1</string>
 	<key>DVTMarkupTextPrimaryHeadingFont</key>
-	<string>.SFNS-Regular - 32.6</string>
+	<string>.SFNS-Regular - 31.2</string>
 	<key>DVTMarkupTextSecondaryHeadingColor</key>
 	<string>0.755129 0.682783 0.512118 1</string>
 	<key>DVTMarkupTextSecondaryHeadingFont</key>
-	<string>.SFNS-Regular - 24.2</string>
+	<string>.SFNS-Regular - 23.4</string>
 	<key>DVTMarkupTextStrongColor</key>
 	<string>0.755129 0.682783 0.512118 1</string>
 	<key>DVTMarkupTextStrongFont</key>
@@ -158,59 +158,59 @@
 	<key>DVTSourceTextSyntaxFonts</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.character</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.comment</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.declaration.other</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.declaration.type</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.function</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.macro</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.type</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.variable</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.identifier.variable.system</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.keyword</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.mark</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.markup.code</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.number</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.plain</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.string</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 		<key>xcode.syntax.url</key>
-		<string>SourceCodePro-Regular - 14.0</string>
+		<string>FiraCode-Regular - 13.0</string>
 	</dict>
 </dict>
 </plist>
