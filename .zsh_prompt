@@ -1,0 +1,53 @@
+# Based on https://github.com/onelittlefish/dotfiles/blob/main/.bash_prompt but modified for zsh
+# https://voracious.dev/a-guide-to-customizing-the-zsh-shell-prompt
+# https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
+
+# Bold the user name when logged in as root
+if [[ "${USER}" == "root" ]]; then
+    userStyle='%B%F{red}'
+else
+    userStyle='%F{red}'
+fi
+
+# Bold the host name when connected via SSH
+if [[ "${SSH_TTY}" ]]; then
+    hostStyle='%B%F{yellow}'
+else
+    hostStyle='%F{yellow}'
+fi
+
+# Set up git info using vcs_info (branch, unstaged/staged/untracked)
+# https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
+# https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#vcs_005finfo-Configuration
+autoload -Uz vcs_info
+precmd () { vcs_info }
+zstyle ':vcs_info:*' formats ' + %F{cyan}%b%f %F{magenta}%u%c%f'
+zstyle ':vcs_info:*' actionformats ' + %F{cyan}%b%f (%a) %F{magenta}%u%c%f'
+zstyle ':vcs_info:*' check-for-changes true # Enables %u and %c; can be slow for large repositories
+zstyle ':vcs_info:*' unstagedstr '!'
+zstyle ':vcs_info:*' stagedstr '+'
+zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+
+# https://stackoverflow.com/questions/49744179/zsh-vcs-info-how-to-indicate-if-there-are-untracked-files-in-git
+# https://github.com/zsh-users/zsh/blob/master/Misc/vcs_info-examples
++vi-git-untracked(){
+    if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+        git status --porcelain | grep '??' &> /dev/null ; then
+        # This will show the marker if there are any untracked files in repo.
+        # If instead you want to show the marker only if there are untracked
+        # files in $PWD, use:
+        # [[ -n $(git ls-files --others --exclude-standard) ]] ; then
+        hook_com[staged]+='?'
+    fi
+}
+
+setopt prompt_subst
+
+newline=$'\n'
+PS1='${userStyle}%n%f%b' # user name
+PS1+=' @ ${hostStyle}%m%f%b' # host
+PS1+=' > %F{green}%~%f' # directory
+PS1+='$vcs_info_msg_0_' # git repository and info
+PS1+='${newline}$ '
+
+export PS1
