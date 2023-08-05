@@ -1,3 +1,17 @@
+! 2/18/2018, 9:16:36 PM https://www.facebook.com/
+www.facebook.com###pagelet_trending_tags_and_topics
+
+! 8/31/2018, 1:35:38 AM https://twitter.com/dungeondrag
+twitter.com##.trends.Trends.module
+
+! 2/17/2019 https://cooking.nytimes.com
+cooking.nytimes.com##.nytc---modal-window---contentBase
+cooking.nytimes.com##.nytc---shared---blackBG.nytc---modal-window---isShown.nytc---modal-window---windowContainer
+cooking.nytimes.com##span:has-text(/^Unlock New York Times recipes/):upward(6)
+
+! 3/19/2019 https://www.inoreader.com
+www.inoreader.com###all_read_message
+
 ! What's Happening
 twitter.com##div[aria-label="Timeline: Trending now"]
 ! Discover new Lists
@@ -10,8 +24,47 @@ twitter.com##div[aria-label="Timeline: Your Lists"] > div > div:nth-of-type(9)
 twitter.com##div:has(> aside[aria-label="Who to follow"])
 ! Topics to follow
 twitter.com##div[aria-label="Timeline: "]
+! Miscellaneous unverified
+twitter.com##[aria-label$="trending now" i]
+twitter.com##[aria-label="who to follow" i]
+twitter.com##[aria-label$="trending now" i]:nth-ancestor(2)
+twitter.com##[aria-label="who to follow" i]:nth-ancestor(2)
+twitter.com##a[aria-label="Search and explore"]
+! https://cohost.org/mcc/post/715387-how-to-hide-the-vie
+! Block "Verified" tab in Twitter notifications
+twitter.com##div:has(>a[href$="/notifications/verified"])
+! Block Twitter "What's Happening" trending box
+twitter.com##div[aria-label$="Trending now"]
+! Block Twitter "Who to Follow" box
+twitter.com##div:has(>aside[aria-label="Who to follow"])
+! Block trending/news section on Twitter search page
+twitter.com##div[aria-label="Timeline: Explore"]
+! Block "Twitter Blue" link in sidebar/anywhere
+twitter.com##a[aria-label$="Twitter Blue"]
 
-cooking.nytimes.com##.nytc---modal-window---contentBase
-cooking.nytimes.com##.nytc---shared---blackBG.nytc---modal-window---isShown.nytc---modal-window---windowContainer
+! 1/16/2020 https://fireemblem.fandom.com
+fireemblem.fandom.com##.premium-recirculation-rail.rail-module
+fireemblem.fandom.com##.wikia-bar-anon.wikia-bar
+fireemblem.fandom.com###WikiaBarWrapper
 
 ||www.nytimes.com/vi-assets/static-assets/main-*.js$script
+
+! reddit side bar
+reddit.com##h2:has-text(/^Similar to this post/):upward(3)
+
+! "sign in with google"
+||accounts.google.com/gsi/iframe/select
+
+! Tumblr Live
+tumblr.com##div:matches-attr(tabindex="-1") > div:has-text(Tumblr Live)
+! Check out these blogs/tags/etc. header
+tumblr.com##div:matches-css(overflow-y: scroll):upward(3):xpath(preceding-sibling::div[1])
+! Check out these blogs/tags/etc.
+tumblr.com##div:matches-css(overflow-y: scroll):upward(3)
+
+! Title: Ben's Twitter Minimal UI Filter
+! Homepage: https://github.com/aldaviva/content-blocking-filters/
+twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h2:has-text(Discover new Lists)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
+twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h2:has-text(Who to follow)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
+twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h2:has-text(Expand your timeline with Topics)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
+twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h1:has-text(Push notifications))
