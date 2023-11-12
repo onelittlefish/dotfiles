@@ -68,3 +68,8 @@ twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h2:h
 twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h2:has-text(Who to follow)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 8])
 twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h2:has-text(Expand your timeline with Topics)):xpath(preceding-sibling::*[2]/following-sibling::*[position() < 11])
 twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h1:has-text(Push notifications))
+
+! Free trial banner, top
+puzzlesociety.com##div:matches-attr(class="/DesktopBanner_desktopBanner_.*/")
+! Free trial banner, bottom pop-up
+puzzlesociety.com##div:matches-attr(class="/ShowSoftUpsell_showSoftUpsell_.*/")
