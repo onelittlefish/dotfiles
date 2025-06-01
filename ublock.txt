@@ -73,3 +73,10 @@ twitter.com##div[aria-label="Timeline: Your Home Timeline"] > div > div:has(h1:h
 puzzlesociety.com##div:matches-attr(class="/DesktopBanner_desktopBanner_.*/")
 ! Free trial banner, bottom pop-up
 puzzlesociety.com##div:matches-attr(class="/ShowSoftUpsell_showSoftUpsell_.*/")
+
+! Twitch sign up banner
+twitch.tv##footer[id="twilight-sticky-footer-root"]
+
+! Gmail "Try Gemini"
+! https://www.reddit.com/r/uBlockOrigin/comments/1id118g/hide_gmails_try_gemini_toolbar_button/
+mail.google.com##[data-tooltip="Settings"]+div:has([aria-label="Try Gemini"])
